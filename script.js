@@ -1,6 +1,6 @@
 // Weather Data storing variables
-const apiKey = config.openWeatherApiKey; // OpenWeather API key
-const geminiKey = config.geminiApiKey; //gemini API key
+const apiKey = process.env.OPENWEATHER_API_KEY; // OpenWeather API key
+const geminiKey = process.env.GEMINI_API_KEY; //gemini API key
 const searchButton = document.querySelector(".searchButton"); // Search button
 const cityInput = document.querySelector(".cityInput"); // Input for city
 const cardCity = document.getElementById("card-city"); // City name display
