@@ -1,0 +1,239 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* For Firefox on macOS */
+}
+
+/*for modal pop up blur effect on background*/
+.blur {
+    filter: blur(4px);
+}
+
+/*for background search instructions*/
+#search-instruction-bg {
+    filter: brightness(0.3);
+}
+
+/*for setting navbar position and z index for better responsiveness*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*  for Main Content to enhance visibility and responsiveness */
+#main-content {
+    margin-top: 60px;
+    z-index: 1;
+}
+
+/*for showing active section an somehow background color according to theme*/
+.gradient-bg {
+    background: linear-gradient(to right, #1F1F1F 2%, #AAAAAA 100%);
+}
+
+/*for side-menu to enhance responsiveness and visibility on others elements*/
+.side-menu {
+    z-index: 1000;
+}
+
+.side-menu .logo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.side-menu li {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.side-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.side-menu a:hover {
+    background-color: #374151;
+}
+
+/*for hiding element*/
+.hidden {
+    display: none;
+    /* This hides the side menu */
+}
+
+
+/* for weather cards and its elements*/
+#card-city {
+    font-size: 0.85rem;
+    font-weight: lighter;
+}
+
+.weather-card {
+    width: 40%;
+}
+
+.highlightbox {
+    width: 10.3rem;
+}
+
+.highlightbox-sun {
+    width: 15rem;
+}
+
+.Doughnut-chart {
+    max-height: 350px;
+    /* Same height as other charts */
+}
+
+.doughnut-chart {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.chart-fnl {
+    height: 350px !important;
+}
+
+
+/* For table animations to enhance responsiveness and visibility */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #363636;
+}
+
+th {
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+tbody {
+    background-color: #2c2c2c;
+}
+
+tbody tr {
+    background-color: #363636;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+tbody tr:nth-child(even) {
+    background: linear-gradient(to left, #3e277a 1%, #4b4a4a 100%);
+}
+
+td {
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+th,
+td {
+    border: none;
+}
+
+tbody tr td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*for chatbot*/
+.chatbot-search {
+    background: linear-gradient(to left, #3e277a 1%, #4b4a4a 100%);
+
+}
+
+/*-----------------------css for animations and styling----------*/
+
+
+/* Slide-in Animation */
+.slide-in {
+    animation: slideIn 0.9s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/*-------------------loading--*/
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.dot {
+    animation: bounce 1s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+    background-color: #FF3D00;
+    /* Red */
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.1s;
+    background-color: #FFD600;
+    /* Yellow */
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.2s;
+    background-color: #00C853;
+    /* Green */
+}
+
+.dot:nth-child(4) {
+    animation-delay: 0.3s;
+    background-color: #2979FF;
+    /* Blue */
+}
+
+.dot:nth-child(5) {
+    animation-delay: 0.4s;
+    background-color: #AA00FF;
+    /* Purple */
+}
