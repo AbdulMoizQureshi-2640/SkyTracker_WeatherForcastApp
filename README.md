@@ -32,7 +32,8 @@ To run the SkyTracker application locally, follow these steps:
 1) Download and Extract The Zip File.
 2) Open the project in your preferred code editor (e.g., Visual Studio Code).
 3) Open the project folder in your code editor and locate the index.html file.
-4) Open the index.html file in your web browser:
+4) Then create config.js file containg api keys.
+5) Open the index.html file in your web browser:
 
   If you are using Visual Studio Code, you can use the Live Server extension for a better development experience. To do this:
   Install the Live Server extension if you haven't already. You can find it in the Visual Studio Code marketplace.
